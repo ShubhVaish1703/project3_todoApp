@@ -1,13 +1,205 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252525;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container{
+    height: 75vh;
+    width: 25%;
+    background-color: azure;
+    border-radius: 1em;
+    overflow: hidden;
+    box-sizing: border-box;
+    overflow:scroll;
+    overflow-x: hidden;
+}
+.heading{
+    font-size: 2.8em;
+    text-align: center;
+    background-color: #252525;
+    color: white;
+    font-weight: bold;
+}
+.input{
+    font-size: 1.2em;
+    background-color: azure;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 0.4em 0.8em;
+    margin-left: 3em;
+    margin-top: 0.6em;
+    margin-bottom: 2em;
+    outline: none;
+    width: 55%;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.btn{
+  background-color: #252525;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 1.5em;
+    height: 1.5em;
+    width: 1.5em;
+    box-shadow: 0 2px 4px darkslategrey;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 70%;
+    font-weight: bold;
+    margin-left:0.6em;
+}
+.btngreen:hover{
+    background-color: rgb(89, 218, 89);
+}
+.btnred:hover{
+    background-color: #e25353;
+}
+.btnred{
+    padding: 0px;
+    font-size: 1em;
+    height: 1.4em;
+    width: 1.4em;
+}
+.todostyle{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    margin-left: 0.4em;
+
+}
+.todostyle li {
+    margin-left: 2em;
+    list-style: none;
+    max-width: 17rem;
+}
+@media only screen and (max-width: 1000px) {
+  .container{
+    width: 32%;
+  }
+}
+@media only screen and (max-width: 812px) {
+  .container{
+    width: 37%;
+  }
+}
+@media only screen and (max-width: 700px) {
+    .heading{
+        font-size: 2.4em;
+    }
+    .input{
+        font-size: 1em;
+    }
+    .btn{
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width: 572px) {
+    .container{   
+    width: 55%;
+    }
+}
+@media only screen and (max-width: 436px) {
+    .heading {
+    font-size: 2em;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    .container {
+    width: 55%;
+
+}
+}
+@media only screen and (max-width: 400px) {
+    .heading {
+        font-size: 1.8em;
+    }
+    .container {
+        width: 65%;
+        height: 72vh;
+    }
+    .todostyle li {
+    font-size: 1em;
+}
+.input{
+    margin-left: 2em;
+}
+    
+}
+
+@media only screen and (max-width: 1380px) {
+    .todostyle li{
+        max-width: 16rem;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .todostyle li {
+    max-width: 14rem;
+}
+}
+@media only screen and (max-width: 1210px) {
+    .todostyle li {
+    max-width: 12rem;
+}
+}
+@media only screen and (max-width: 1070px) {
+    .todostyle li {
+    max-width: 11rem;
+}
+}
+@media only screen and (max-width: 950px) {
+    .todostyle li {
+    max-width: 13rem;
+}
+}
+@media only screen and (max-width: 870px) {
+    .todostyle li {
+    max-width: 11rem;
+}
+}
+@media only screen and (max-width: 676px) {
+    .todostyle li {
+    max-width: 14rem;
+}
+.container {
+    width: 50%;
+}
+}
+@media only screen and (max-width: 596px) {
+    .todostyle li {
+    max-width: 12rem;
+}
+}
+@media only screen and (max-width: 540px) {
+    .todostyle li {
+    max-width: 10rem;
+}
+}
+@media only screen and (max-width: 464px) {
+    .todostyle li {
+    max-width: 8rem;
+}
+}
+@media only screen and (max-width: 378px) {
+    .todostyle li {
+    max-width: 8rem;
+}
+.container {
+    width: 61%;
+}
+}
+@media only screen and (max-width: 420px){
+.container {
+    width: 65%;
+}
 }
